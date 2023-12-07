@@ -10,14 +10,14 @@ import SwiftUI
 struct ContentView: View {
     let emojis = ["👻", "🎃", "🕷️", "👿", "💀", "🕸️", "🧙", "🙀", "👹", "😱", "☠️", "🍭"]
     
-    @State var cardCount: Int = 4
+    @State var cardCount: Int = 6
     
     var body: some View {
         VStack {
+            Text("Memorize!").font(.largeTitle)
             ScrollView {
                 cards
             }
-            Spacer()
         }
         .padding()
     }
